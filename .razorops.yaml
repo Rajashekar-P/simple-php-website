@@ -4,4 +4,6 @@ tasks:
     steps:
     - checkout
     - commands:
+      - curl --version
       - php -S localhost:8080
+      
