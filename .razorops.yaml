@@ -3,5 +3,4 @@ tasks:
     runner: razorci/php:7.4
     steps:
     - checkout
-    - commands:
-     - php --version
+    - run: echo Hello
