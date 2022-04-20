@@ -5,4 +5,5 @@ tasks:
     - checkout
     - run: echo Hello
   build:
+    steps:
     - run: echo Build Stage
