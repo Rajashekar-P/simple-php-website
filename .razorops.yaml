@@ -3,7 +3,6 @@ tasks:
     runner: razorci/php:7.4
     steps:
     - checkout
-    - run: composer install -n --prefer-dist
     - commands:
       - phpbrew switch 7.2.23
       - composer install -n --prefer-dist
