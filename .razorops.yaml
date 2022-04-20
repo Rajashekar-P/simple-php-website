@@ -1,8 +1,7 @@
 tasks:
   unit-test:
-    runner:
-    os_image: ubuntu
+    runner: razorci/php:7.4
     steps:
     - checkout
     - commands:
-      - phpbrew switch 7.2.23
+      echo "Hello PHP"
