@@ -4,4 +4,4 @@ tasks:
     steps:
     - checkout
     - commands:
-     - echo "Hello PHP"
+     - php --version
