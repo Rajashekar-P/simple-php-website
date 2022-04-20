@@ -5,5 +5,4 @@ tasks:
     - checkout
     - commands:
       - docker pull composer
-      - composer install -n --prefer-dist
       - composer -V
