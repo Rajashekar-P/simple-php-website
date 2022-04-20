@@ -1,9 +1,12 @@
 tasks:
-  unit-test:
+  build:
     runner: razorci/php:7.4
     steps:
     - checkout
-    - run: echo Hello
-  build:
-    steps:
     - run: echo Build Stage
+  test:
+    steps:
+    - run: echo Test Stage
+  deploy:
+    steps:
+    - run: echo Deploy Stage
