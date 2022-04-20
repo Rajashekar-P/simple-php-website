@@ -4,6 +4,6 @@ tasks:
     steps:
     - checkout
     - commands:
-      - phpbrew switch 7.2.23
+      - docker pull composer
       - composer install -n --prefer-dist
       - composer -V
