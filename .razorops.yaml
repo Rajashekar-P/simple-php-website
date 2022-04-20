@@ -4,4 +4,10 @@ tasks:
     steps:
     - checkout
     - commands:
-      - php index.php
+      - phpbrew switch 7.2.23
+      - composer -V
+    steps:
+    - cache/pull: composer-cache-{{ checksum "composer.lock" }}
+    - run: composer install -n --prefer-dist
+    - commands:
+      - composer install -n --prefer-dist
