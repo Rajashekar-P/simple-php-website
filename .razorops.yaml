@@ -4,9 +4,9 @@ tasks:
     steps:
     - checkout
     - run: echo Build Stage
-  test:
-    steps:
-    - run: echo Test Stage
-  deploy:
-    steps:
-    - run: echo Deploy Stage
+ # test:
+ #   steps:
+ #   - run: echo Test Stage
+ # deploy:
+ #   steps:
+ #   - run: echo Deploy Stage
